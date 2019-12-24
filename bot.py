@@ -16,4 +16,4 @@ async def on_member_remove(member):
     print(f'{member} is done sharing memes.')
 
 
-client.run('NjU4NzAwNTQ2NTU0NzI0NDIy.XgDpHw.jKv-mXWIP8fg2S9EveOtiJhw8T0')
+client.run('NjU4NzAwNTQ2NTU0NzI0NDIy.XgIxBQ.Gh82Cyk8TB4LYyqFke5uRnkAgmU')
