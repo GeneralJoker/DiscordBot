@@ -1,2 +1,2 @@
 # DiscordBot
-Upvote/Downvote system for memes, images.... you name it!
+Upvote/Downvote system for memes and images
