@@ -16,13 +16,6 @@ async def on_member_join(member):
 async def on_member_remove(member):
     print(f'{member} is done sharing memes.')
 
-"""@client.event
-async def on_message(message):
-    whitelist = ['.jpg', '.png', '.bmp', '.jpeg']
-    if message.attachment.filename.endswith(whitelist):
-        await message.add_reaction('⬆️')
-"""
-
 whitelist = ['.jpg', '.png', '.bmp', '.jpeg']
 
 @client.listen()
@@ -40,7 +33,7 @@ async def ping(ctx):
     await ctx.send('Pong!')
 
 @client.command()
-async def breathe(ctx):
+async def boi(ctx):
     await ctx.send('https://tenor.com/view/spongebob-roast-boy-gif-5259347')
 
 client.run(token)
