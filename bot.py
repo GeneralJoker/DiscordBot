@@ -30,17 +30,24 @@ async def on_message(message):
         await message.add_reaction("⬇️")
 
 
+"""try:
+    @client.event()
+    async def num_reactions(ctx):
+        if message.attachments:
+            for react in message.reactions:
+                if str(react.emoji) == "⬇️":
+                    if react.count > 1:
+                        await message.delete()
+        else:
+            return
+except Exception as error:
+    raise(error)"""
 
-@client.command()
-async def num_reactions(ctx):
-    if message.attachments:
-        for react in message.reactions:
-            if str(react.emoji) == "⬇️":
-                if react.count > 1:
-                    await message.delete()
-    else:
-        return
-
+@client.event
+async def on_reaction_add(reaction, user):
+  if reaction.emoji == '👍':
+    if reaction.count > 1:
+        await message.delete()
 
 
 @client.command()
