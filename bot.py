@@ -26,28 +26,19 @@ async def on_message(message):
         return
 
     if any(a.filename.casefold().endswith(whitelist) for a in message.attachments):
-        await message.add_reaction("⬆️")
-        await message.add_reaction("⬇️")
+        await message.add_reaction('⬆️')
+        await message.add_reaction('⬇️')
 
-
-"""try:
-    @client.event()
-    async def num_reactions(ctx):
-        if message.attachments:
-            for react in message.reactions:
-                if str(react.emoji) == "⬇️":
-                    if react.count > 1:
-                        await message.delete()
-        else:
-            return
-except Exception as error:
-    raise(error)"""
 
 @client.event
-async def on_reaction_add(reaction, user):
-  if reaction.emoji == '👍':
-    if reaction.count > 1:
-        await message.delete()
+async def on_raw_reaction_add(payload):
+    channel = client.get_channel(payload.channel_id)
+    message = await channel.fetch_message(payload.message_id)
+    if payload.emoji.name == "⬇️":
+        if message.attachments:
+            for react in message.reactions:
+                if react.count > 1:
+                    await message.delete()
 
 
 @client.command()
