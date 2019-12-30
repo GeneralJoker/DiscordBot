@@ -16,3 +16,6 @@ Future update ideas:
 - Set the downvote threshold for deleting an image with a command ".limit" (Default is >3)
 - Set the upvote threshold for pinning an image with a command ".pinat" (Default would be around ~ >15)
 - Limiting the bot's actions to a single channel with a command ".isolate <channel_id>"
+- Add a ".help" command listing all the available commands
+
+
