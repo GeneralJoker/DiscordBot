@@ -20,3 +20,6 @@ Future update ideas:
 - Add a ".help" command listing all the available commands
 
 
+
+
+#This project is licensed under the terms of the GNU General Public License v3.0
