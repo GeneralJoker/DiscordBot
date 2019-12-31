@@ -22,4 +22,4 @@ Future update ideas:
 
 
 
-#This project is licensed under the terms of the GNU General Public License v3.0
+This project is licensed under the terms of the GNU General Public License v3.0
