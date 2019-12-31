@@ -49,4 +49,4 @@ async def ping(ctx):
 async def breathe(ctx):
     await ctx.send('https://tenor.com/view/spongebob-roast-boy-gif-5259347')
 
-client.run('NjU4NzAwNTQ2NTU0NzI0NDIy.XgeYbQ.Aho0H0n4cR6pvKwXMdKQ9bNMvpU')
+client.run(token)
